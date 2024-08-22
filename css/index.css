@@ -1,0 +1,94 @@
+body {
+    //border: 3px solid blue;
+    background-color: rgb(40, 40, 43);
+    color: white;
+    margin: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1, h2, h4 {
+    text-align: center;
+    
+}
+
+h1, h2 {
+    color: gold;
+    font-weight: bolder;
+}
+h1 {
+    font-size: 40px;
+    text-decoration-line: underline;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+#about {
+    margin: 0px 40px;
+    padding: 10px;
+}
+
+#about p{
+    text-align: center;
+    border: 3px solid gold;
+    padding: 25px;
+    margin: 0 50px;
+}
+
+#experience {
+    //border: 3px solid yellow;
+    margin: 0px 75px 0px 40px;
+    padding: 20px;
+}
+
+#experience ul li {
+    //border: 3px solid yellow;
+    display: block;
+    padding: 0px;
+    margin: 10px 0;
+    text-align: left;
+
+}
+
+#experience div {
+    border: 3px solid gold;
+    padding: 0px 20px 10px;
+    margin: 20px 0px;
+}
+
+#connect {
+    //border: 3px solid orange;
+    text-align: center;
+    margin: 0px 40px;
+    padding: 15px;
+}
+
+#connect ul li {
+    //border: 3px solid yellow;
+    display: inline-block;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+#linkedin {
+    margin: 20px 50px;
+}
+
+
+#connect img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin-top: 20px;
+}
