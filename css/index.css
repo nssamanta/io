@@ -1,94 +1,60 @@
 body {
-    //border: 3px solid blue;
     background-color: rgb(40, 40, 43);
     color: white;
-    margin: 40px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    text-align: center;
+    font-size: 17px;
 }
 
-h1, h2, h4 {
-    text-align: center;
-    
+section {
+    padding: 5px;
+    margin: 0 20px 0 ;
 }
 
 h1, h2 {
     color: gold;
-    font-weight: bolder;
 }
+
 h1 {
     font-size: 40px;
-    text-decoration-line: underline;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 27px;
+    font-weight: 800;
 }
 
-h4 {
-    font-weight: bold;
+h3 {
+    font-size: 20px;
 }
 
-#about {
-    margin: 0px 40px;
-    padding: 10px;
+#about p {
+     border: 3px solid gold;
+     padding: 25px;
+     margin: 35px;
 }
 
-#about p{
-    text-align: center;
-    border: 3px solid gold;
-    padding: 25px;
-    margin: 0 50px;
+#experience ul {
+    list-style-type: none;
+    padding: auto;
+    margin: 0;
 }
-
-#experience {
-    //border: 3px solid yellow;
-    margin: 0px 75px 0px 40px;
-    padding: 20px;
-}
-
 #experience ul li {
-    //border: 3px solid yellow;
-    display: block;
-    padding: 0px;
-    margin: 10px 0;
-    text-align: left;
-
-}
-
-#experience div {
     border: 3px solid gold;
-    padding: 0px 20px 10px;
-    margin: 20px 0px;
-}
-
-#connect {
-    //border: 3px solid orange;
-    text-align: center;
-    margin: 0px 40px;
-    padding: 15px;
+    padding: 0 25px 25px;
+    margin: 0 35px 15px 0;
 }
 
 #connect ul li {
-    //border: 3px solid yellow;
+    list-style-type: none;
     display: inline-block;
-    padding: 10px;
-    margin: 0px 10px;
 }
 
 #linkedin {
     margin: 20px 50px;
-}
-
-
-#connect img {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-}
-
-p {
-    margin-top: 20px;
 }
