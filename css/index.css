@@ -9,9 +9,25 @@ body {
     font-size: 17px;
 }
 
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    background-color: gold;
+    border: 6px solid gold;
+    border-style: outset;
+    padding: 0 5px 5px;
+    margin: 0 10px;
+}
+
 section {
     padding: 5px;
-    margin: 0 20px 0 ;
+    margin: 0 20px 0;
 }
 
 h1, h2 {
@@ -30,7 +46,8 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 900;
 }
 
 #about p {
@@ -41,18 +58,30 @@ h3 {
 
 #experience ul {
     list-style-type: none;
-    padding: auto;
+    padding: 0;
     margin: 0;
 }
+
 #experience ul li {
     border: 3px solid gold;
     padding: 0 25px 25px;
-    margin: 0 35px 15px 0;
+    margin: 0 35px 20px;
 }
 
-#connect ul li {
+#experience .job-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#experience p {
+    text-align: left;
+}
+
+#connect ul {
     list-style-type: none;
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #linkedin {
