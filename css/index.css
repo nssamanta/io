@@ -1,4 +1,12 @@
+/* Mobile First Design
+Navigation element media queries include flex direction change and text size change.
+Section element media queries include text size change and margins change.
+Name element media queries include text size change and text style change 
+*/
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(40, 40, 43);
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -6,15 +14,35 @@ body {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     text-align: center;
-    font-size: 17px;
+    font-size: 1rem; /*font sizing needs to increase for tablet and desktop design*/
 }
 
+nav {
+    position: static;
+}
 
+/* Desktop (1024px and up) */
+@media (min-width:1024px) {
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color:rgb(40, 40, 43);
+        padding: 5px;
+        margin: 10px 0 0;
+    }
+}
+
+/* Mobile (600px and below) Navigation Element */
 nav ul{
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0 10px;
+    
 }
 
 nav ul li{
@@ -22,32 +50,114 @@ nav ul li{
     border: 6px solid gold;
     border-style: outset;
     padding: 0 5px 5px;
-    margin: 0 10px;
+    margin: 0;
+    width: 100%; /* listed items  are the same width */
+    text-align: center;
 }
 
+/* Tablet (600px and up) Navigation Element */
+@media (min-width:600px) {
+    nav ul{
+        flex-direction: row;
+        font-size: 1rem;
+    }
+}
+
+/* Desktop (1024px and up) Navigation Element */
+@media (min-width:1024px) {
+    nav ul li{
+        margin: 0 10px;
+        font-size: 1.05rem;
+    }
+}
+
+/* Mobile (600px and below) Section Element */
 section {
-    padding: 5px;
-    margin: 0 20px 0;
+    padding: 0;
+    margin: 5px 0;
+}
+
+/* Tablet (600px and up) Section Element */
+@media (min-width:600px) {
+    section {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+}
+
+/* Desktop (1024px and up) Section Element */
+@media (min-width:1024px) {
+    section {
+        margin: 0 25px;
+        font-size: 1.05rem;
+    }
 }
 
 h1, h2 {
     color: gold;
 }
 
+/* Mobile (600px and below) Name Element */
 h1 {
-    font-size: 40px;
+    font-size: 2rem;
     text-transform: uppercase;
+    text-decoration: underline;
     font-weight: 900;
 }
 
+/* Tablet (600px and up) Name Element */
+@media (min-width:600px) {
+    h1 {
+        font-size: 3rem;
+        font-style: oblique;
+    }
+}
+
+/* Desktop (1024px and up) Name Element */
+@media (min-width:1024px) {
+    h1 {
+        font-size: 4rem; 
+    }
+}
+
+/* Mobile (600px and below) */
 h2 {
-    font-size: 27px;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
+/* Tablet (600px and up) */
+@media (min-width:600px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width:1024px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile (600px and below) */
 h3 {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 900;
+}
+
+/* Tablet (600px and up) */
+@media (min-width:600px) {
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width:1024px) {
+    h3 {
+        font-size: 1.3rem;
+    }
 }
 
 #about p {
@@ -81,9 +191,12 @@ h3 {
 #connect ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping Prevents side scrolling on mobile*/
+    padding: 0;
+    margin:0;
 }
 
 #linkedin {
-    margin: 20px 50px;
+    margin: 20px;
 }
