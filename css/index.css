@@ -200,3 +200,8 @@ h3 {
 #linkedin {
     margin: 20px;
 }
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
