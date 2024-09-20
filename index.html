@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <h1>Nely Santos</h1>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -24,7 +25,6 @@
         <li><a href="#connect">Connect</a></li>
       </ul>
     </nav>
-    <h1>Nely Santos</h1>
     <section id="about">
       <h2>About</h2>
       <p>
@@ -105,6 +105,26 @@
         </li>
       </ul>
       <p><a href="mailto:nelysantossamanta@gmail.com">E-mail: nelysantossamanta@gmail.com</a></p>
+    </section>
+    <section>
+      <h2>Leave a Message</h2>
+        <form name="leave_message">
+           <label for="usersName">Name</label><br>
+           <input type="text" name="usersName" required><br><br>
+        
+            <label for="usersEmail">Email</label><br>
+            <input type="email" name="usersEmail" required><br><br>
+         
+            <label for="usersMessage">Message</label><br>
+            <textarea name="usersMessage" required></textarea><br><br>
+      
+          <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="messages">
+      <h2>Messages</h2>
+        <ul>
+        </ul>
     </section>
     <script src="js/index.js"></script>
   </body>
