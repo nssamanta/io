@@ -75,3 +75,25 @@ messageForm.addEventListener("submit", (e) => {
     messageForm.reset();
 });
 
+fetch("https://api.github.com/users/nssamanta/repos")
+    .then (response => {  //function returns response JSON data
+        if(!response.ok) { //check for 200-299 error 
+        throw new Error("Network response was not ok");
+    }
+    return response.json(); 
+})
+.then (repositories => {
+    console.log(repositories); //log repositories array
+    const projectSection = document.querySelector("#projects");
+    const projectList = projectSection.querySelector("ul");
+    //loop through repositories array and create list items
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+        project.textContent = repositories[i].name;
+        projectList.appendChild(project);
+    }
+})
+.catch(error => {
+    console.error('There was an error', error); //handle any network or fetch errors
+});
+
