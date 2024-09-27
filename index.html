@@ -20,9 +20,10 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#connect">Connect</a></li>
+        <li><a href="#message">Message</a></li>
       </ul>
     </nav>
     <section id="about">
@@ -92,37 +93,37 @@
       <ul>
         <li>
           <a href="https://github.com/nssamanta" target="_blank"
-            ><img id="github" src="githublogo.png" alt="Nely's Github Profile"
+            ><img id="github" src="images/githublogo.png" alt="Nely's Github Profile"
           /></a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/nssantos25/" target="_blank"
             ><img
               id="linkedin"
-              src="linkedinlogo.png"
+              src="images/linkedinlogo.png"
               width="150px"
               alt="Nely's LinkedIn Profile"
           /></a>
         </li>
       </ul>
-      <p><a href="mailto:nelysantossamanta@gmail.com">E-mail: nelysantossamanta@gmail.com</a></p>
+      <p><a href="mailto:nelysantossamanta@gmail.com" id="email">E-mail: nelysantossamanta@gmail.com</a></p>
     </section>
-    <section>
+    <section id="message">
       <h2>Leave a Message</h2>
-        <form name="leave_message">
-           <label for="usersName">Name</label><br>
+        <form name="leave_message" id="form">
+           <label for="usersName">Name:</label><br>
            <input type="text" name="usersName" required><br><br>
         
-            <label for="usersEmail">Email</label><br>
+            <label for="usersEmail">Email:</label><br>
             <input type="email" name="usersEmail" required><br><br>
          
-            <label for="usersMessage">Message</label><br>
+            <label for="usersMessage">Message:</label><br>
             <textarea name="usersMessage" required></textarea><br><br>
       
           <button type="submit">Submit</button>
         </form>
     </section>
-    <section id="messages">
+    <section id="messages" style="display: none;">
       <h2>Messages</h2>
         <ul>
         </ul>
