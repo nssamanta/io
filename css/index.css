@@ -201,6 +201,10 @@ h3 {
     margin: 20px;
 }
 
+#github {
+    height: 185px;
+}
+
 #skills ul {
     list-style-type: none;
     padding: 0;
@@ -209,4 +213,18 @@ h3 {
 #projects ul {
     list-style-type: none;
     padding: 0;
+}
+
+#form {
+    border: 3px solid gold;
+    padding: 20px
+}
+
+#messages ul {
+    border: 3px solid gold;
+    padding: 40px;
+}
+
+button {
+    margin: 15px;
 }
